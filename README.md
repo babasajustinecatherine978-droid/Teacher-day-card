@@ -1,17 +1,277 @@
-<!DOCTYPE html>
-<!-- saved from url=(0075)file:///C:/Users/Student%20User/Downloads/Teachers_day_card/Untitled-2.html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+# 💌 Teachers' Day Letter — Sir Randy Bello
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+**LIVE VIEW:** https://babasajustinecatherine978-droid.github.io/Teacher-day-card/
 
-<title>Happy Teachers' Day - Sir Randy Bello</title>
+A creative and interactive **Teachers' Day digital letter** made with **HTML, CSS, and JavaScript**.
 
-<style>
+This project is designed as a personalized appreciation letter for **Sir Randy Bello**, a Web Development instructor. It features an animated envelope, an interactive letter, floating hearts, and a Dark/Light Mode switch.
 
-/* =====================================================
-   VARIABLES
-===================================================== */
+---
 
+## ✨ Features
+
+* 💌 Interactive animated envelope
+* 📖 Animated letter opening effect
+* ❤️ Floating heart animations
+* 🌙 Dark Mode
+* ☀️ Light Mode
+* 💾 Remembers the selected theme using `localStorage`
+* 🖼️ Teacher photo included in the letter
+* ✨ Smooth CSS transitions and animations
+* ⌨️ Keyboard support using `Enter` or `Space`
+* 📱 Responsive design for desktop and mobile devices
+* ♿ Reduced-motion support for users who prefer less animation
+* 🎨 Professional pink, black, and light-themed design
+* 📚 Personalized Teachers' Day message for Sir Randy Bello
+
+---
+
+## 🛠️ Technologies Used
+
+| Technology   | Purpose                                                    |
+| ------------ | ---------------------------------------------------------- |
+| HTML5        | Website structure and letter content                       |
+| CSS3         | Design, animations, transitions, responsive layout         |
+| JavaScript   | Envelope interaction, theme switching, and floating hearts |
+| LocalStorage | Saves the user's Dark/Light Mode preference                |
+
+---
+
+## 📁 Project Structure
+
+```text
+Teachers_day_card/
+│
+├── index.html
+├── README.md
+│
+└── images/
+    └── bello.png.jpg
+```
+
+> Make sure the image path in `index.html` matches the location of your image.
+
+The current project references the teacher image as:
+
+```html
+<img class="teacher-photo"
+     src="Teachers_day_card/images/bello.png.jpg"
+     alt="Sir Randy Bello">
+```
+
+---
+
+## 🚀 How to Use
+
+### 1. Download or Clone the Project
+
+Clone the repository:
+
+```bash
+git clone https://github.com/YOUR-USERNAME/teachers-day-letter.git
+```
+
+Then open the project folder:
+
+```bash
+cd teachers-day-letter
+```
+
+---
+
+### 2. Check Your Files
+
+Make sure your project contains the required files:
+
+```text
+index.html
+README.md
+images/
+└── bello.png.jpg
+```
+
+---
+
+### 3. Open the Website
+
+This project does not require a server or database.
+
+Simply double-click:
+
+```text
+index.html
+```
+
+It will open in your web browser.
+
+You can also right-click `index.html` and select:
+
+**Open with → Google Chrome / Microsoft Edge / Firefox**
+
+---
+
+## 💌 How the Letter Works
+
+When the website opens, you will see the Teachers' Day introduction and an animated envelope.
+
+Click the envelope to open the letter.
+
+The opening animation reveals the personalized message for Sir Randy Bello and creates floating heart animations.
+
+You can also press:
+
+```text
+Enter
+```
+
+or
+
+```text
+Space
+```
+
+when the envelope is focused to open it.
+
+---
+
+## 🌙 Dark / Light Mode
+
+The website includes a theme switch in the top navigation bar.
+
+Click:
+
+```text
+☀️ Light Mode
+```
+
+to switch to Light Mode.
+
+The button changes to:
+
+```text
+🌙 Dark Mode
+```
+
+Click it again to return to Dark Mode.
+
+The selected theme is automatically saved in the browser using `localStorage`, so your preference remains after refreshing the page.
+
+---
+
+## ✏️ How to Customize the Letter
+
+You can personalize the project by editing the text directly inside `index.html`.
+
+### Change the Teacher's Name
+
+Find:
+
+```html
+<span>
+    Sir Randy Bello
+</span>
+```
+
+Replace it with the teacher's name you want.
+
+For example:
+
+```html
+<span>
+    Sir Juan Dela Cruz
+</span>
+```
+
+---
+
+### Change the Subtitle
+
+Find the subtitle:
+
+```html
+<p class="subtitle">
+    A small letter for a teacher whose lessons go
+    beyond code — inspiring creativity, patience,
+    confidence, and the courage to keep learning.
+</p>
+```
+
+Replace the text with your own message.
+
+---
+
+### Change the Main Letter
+
+The main letter content is inside:
+
+```html
+<div class="letter" id="letter">
+```
+
+You can edit the paragraphs inside this section.
+
+Example:
+
+```html
+<p>
+    Thank you for your guidance, patience, and
+    dedication. Your lessons have inspired us
+    to become better students and developers.
+</p>
+```
+
+---
+
+### Change the Teacher Photo
+
+Replace the image file in the `images` folder.
+
+For example:
+
+```text
+images/
+└── teacher.jpg
+```
+
+Then update the HTML:
+
+```html
+<img class="teacher-photo"
+     src="images/teacher.jpg"
+     alt="Teacher">
+```
+
+Make sure the filename and path are correct.
+
+---
+
+### Change the Signature
+
+Find:
+
+```html
+<div class="signature">
+    Your Student ♥️
+</div>
+```
+
+You can change it to:
+
+```html
+<div class="signature">
+    From Your Students ♥️
+</div>
+```
+
+---
+
+## 🎨 Changing the Colors
+
+The main colors are controlled by CSS variables near the beginning of the `<style>` section.
+
+For example:
+
+```css
 :root {
     --pink: #ff4f9a;
     --pink-light: #ff9fc8;
@@ -21,1843 +281,239 @@
     --black2: #151515;
 
     --white: #ffffff;
-
-    --paper: #fff8fb;
-    --text: #24151d;
-    --muted: #765c68;
-
-    --shadow: 0 30px 80px rgba(0,0,0,0.35);
-
-    --transition:
-        700ms cubic-bezier(.22,1,.36,1);
 }
+```
 
+You can change these values to create your own color theme.
 
-/* =====================================================
-   RESET
-===================================================== */
+For example, you could use:
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+```css
+--pink: #6c63ff;
+--pink-light: #a29bfe;
+--pink-dark: #4834d4;
+```
 
-html {
-    scroll-behavior: smooth;
-}
+---
 
-body {
-    min-height: 100vh;
+## ❤️ Floating Hearts
 
-    font-family:
-        Inter,
-        Arial,
-        Helvetica,
-        sans-serif;
+The website automatically creates floating heart animations using JavaScript.
 
-    color: white;
+The hearts are generated by:
 
-    background:
-        radial-gradient(
-            circle at 15% 15%,
-            rgba(255,79,154,0.18),
-            transparent 30%
-        ),
-
-        radial-gradient(
-            circle at 85% 80%,
-            rgba(255,79,154,0.12),
-            transparent 30%
-        ),
-
-        linear-gradient(
-            135deg,
-            #050505,
-            #171717 55%,
-            #090909
-        );
-
-    overflow-x: hidden;
-
-    transition:
-        background var(--transition),
-        color var(--transition);
-}
-
-
-/* LIGHT MODE */
-
-body.light {
-
-    color: #24151d;
-
-    background:
-        radial-gradient(
-            circle at 15% 15%,
-            rgba(255,79,154,0.16),
-            transparent 30%
-        ),
-
-        radial-gradient(
-            circle at 85% 80%,
-            rgba(255,159,200,0.20),
-            transparent 35%
-        ),
-
-        linear-gradient(
-            135deg,
-            #fff7fb,
-            #ffeef6 55%,
-            #ffffff
-        );
-}
-
-
-/* =====================================================
-   BACKGROUND EFFECT
-===================================================== */
-
-.ambient {
-    position: fixed;
-    inset: 0;
-
-    pointer-events: none;
-
-    overflow: hidden;
-
-    z-index: 0;
-}
-
-.orb {
-    position: absolute;
-
-    width: 280px;
-    height: 280px;
-
-    border-radius: 50%;
-
-    filter: blur(60px);
-
-    opacity: 0.18;
-
-    background: var(--pink);
-
-    animation:
-        drift 12s ease-in-out infinite alternate;
-}
-
-.orb.one {
-    left: -100px;
-    top: 15%;
-}
-
-.orb.two {
-    right: -110px;
-    bottom: 10%;
-
-    width: 340px;
-    height: 340px;
-
-    animation-delay: -4s;
-}
-
-
-@keyframes drift {
-
-    to {
-        transform:
-            translate(50px,-35px)
-            scale(1.12);
-    }
-}
-
-
-/* =====================================================
-   TOP NAVIGATION
-===================================================== */
-
-.topbar {
-
-    position: fixed;
-
-    z-index: 20;
-
-    top: 18px;
-
-    left: 50%;
-
-    transform: translateX(-50%);
-
-    width:
-        min(
-            1120px,
-            calc(100% - 30px)
-        );
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
-
-    padding:
-        10px
-        12px
-        10px
-        18px;
-
-    border:
-        1px solid
-        rgba(255,255,255,0.13);
-
-    background:
-        rgba(10,10,10,0.55);
-
-    backdrop-filter: blur(18px);
-
-    border-radius: 999px;
-
-    box-shadow:
-        0 10px 35px
-        rgba(0,0,0,0.16);
-
-    transition: 0.5s ease;
-}
-
-body.light .topbar {
-
-    background:
-        rgba(255,255,255,0.66);
-
-    border-color:
-        rgba(217,31,112,0.12);
-}
-
-
-.brand {
-
-    display: flex;
-
-    gap: 10px;
-
-    align-items: center;
-
-    font-weight: 800;
-
-    letter-spacing: 0.08em;
-
-    font-size: 0.76rem;
-
-    text-transform: uppercase;
-}
-
-
-.brand-dot {
-
-    width: 10px;
-    height: 10px;
-
-    background: var(--pink);
-
-    border-radius: 50%;
-
-    box-shadow:
-        0 0 18px
-        var(--pink);
-}
-
-
-/* =====================================================
-   THEME BUTTON
-===================================================== */
-
-.theme-btn {
-
-    border:
-        1px solid
-        rgba(255,255,255,0.18);
-
-    background:
-        rgba(255,255,255,0.07);
-
-    color: inherit;
-
-    border-radius: 999px;
-
-    padding:
-        9px 14px;
-
-    cursor: pointer;
-
-    font-weight: 700;
-
-    transition: 0.3s ease;
-}
-
-body.light .theme-btn {
-
-    border-color:
-        rgba(217,31,112,0.15);
-
-    background:
-        rgba(255,255,255,0.65);
-}
-
-.theme-btn:hover {
-
-    transform:
-        translateY(-2px);
-}
-
-
-/* =====================================================
-   MAIN
-===================================================== */
-
-main {
-
-    position: relative;
-
-    z-index: 1;
-
-    min-height: 100vh;
-
-    padding:
-        120px 20px 70px;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-}
-
-
-.scene {
-
-    width:
-        min(
-            1040px,
-            100%
-        );
-
-    text-align: center;
-}
-
-
-/* =====================================================
-   TITLE
-===================================================== */
-
-.eyebrow {
-
-    margin-bottom: 12px;
-
-    color: var(--pink-light);
-
-    font-size: 0.78rem;
-
-    font-weight: 900;
-
-    letter-spacing: 0.24em;
-
-    text-transform: uppercase;
-
-    animation:
-        fadeUp 1s both;
-}
-
-body.light .eyebrow {
-
-    color:
-        var(--pink-dark);
-}
-
-
-h1 {
-
-    margin: 0;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size:
-        clamp(
-            2.8rem,
-            7vw,
-            6.4rem
-        );
-
-    line-height: 0.95;
-
-    letter-spacing: -0.055em;
-
-    animation:
-        fadeUp
-        1s
-        0.08s
-        both;
-}
-
-h1 span {
-
-    color: var(--pink);
-
-    text-shadow:
-        0 0 40px
-        rgba(255,79,154,0.25);
-}
-
-
-.subtitle {
-
-    max-width: 680px;
-
-    margin:
-        20px auto 35px;
-
-    color:
-        rgba(255,255,255,0.70);
-
-    line-height: 1.7;
-
-    animation:
-        fadeUp
-        1s
-        0.16s
-        both;
-}
-
-body.light .subtitle {
-
-    color:
-        rgba(36,21,29,0.68);
-}
-
-
-@keyframes fadeUp {
-
-    from {
-
-        opacity: 0;
-
-        transform:
-            translateY(24px);
-    }
-
-    to {
-
-        opacity: 1;
-
-        transform:
-            translateY(0);
-    }
-}
-
-
-/* =====================================================
-   ENVELOPE AREA
-===================================================== */
-
-.envelope-wrap {
-
-    position: relative;
-
-    width:
-        min(
-            620px,
-            94vw
-        );
-
-    height: 420px;
-
-    margin:
-        20px auto 0;
-
-    perspective: 1800px;
-
-    animation:
-        fadeUp
-        1s
-        0.25s
-        both;
-}
-
-
-.envelope {
-
-    position: absolute;
-
-    inset:
-        30px 0 0;
-
-    cursor: pointer;
-
-    transform-style: preserve-3d;
-
-    transition:
-        transform
-        1.2s
-        cubic-bezier(.2,.85,.2,1);
-}
-
-
-.envelope.opened {
-
-    transform:
-        translateY(50px);
-}
-
-
-/* =====================================================
-   ENVELOPE BACK
-===================================================== */
-
-.env-back {
-
-    position: absolute;
-
-    inset: 0;
-
-    border-radius: 22px;
-
-    background:
-        linear-gradient(
-            145deg,
-            #191919,
-            #090909
-        );
-
-    border:
-        1px solid
-        rgba(255,255,255,0.12);
-
-    box-shadow:
-        var(--shadow);
-
-    overflow: hidden;
-}
-
-
-body.light .env-back {
-
-    background:
-        linear-gradient(
-            145deg,
-            #ffd7e8,
-            #ffb7d5
-        );
-
-    border-color:
-        rgba(217,31,112,0.16);
-}
-
-
-.env-back::before {
-
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background:
-
-        linear-gradient(
-            32deg,
-            transparent 49.7%,
-            rgba(255,255,255,0.08) 50%,
-            transparent 50.4%
-        ),
-
-        linear-gradient(
-            148deg,
-            transparent 49.7%,
-            rgba(255,255,255,0.08) 50%,
-            transparent 50.4%
-        );
-}
-
-
-/* =====================================================
-   ENVELOPE FLAP
-===================================================== */
-
-.flap {
-
-    position: absolute;
-
-    z-index: 4;
-
-    top: 0;
-
-    left: 0;
-
-    width: 100%;
-
-    height: 55%;
-
-    transform-origin:
-        top center;
-
-    transform-style:
-        preserve-3d;
-
-    background:
-        linear-gradient(
-            145deg,
-            #2a2a2a,
-            #101010
-        );
-
-    clip-path:
-        polygon(
-            0 0,
-            100% 0,
-            50% 100%
-        );
-
-    border-bottom:
-        1px solid
-        rgba(255,255,255,0.12);
-
-    transition:
-        transform
-        1s
-        cubic-bezier(.22,1,.36,1);
-}
-
-
-body.light .flap {
-
-    background:
-        linear-gradient(
-            145deg,
-            #ffe3ee,
-            #ffb8d5
-        );
-}
-
-
-.envelope.opened .flap {
-
-    transform:
-        rotateX(180deg);
-
-    z-index: 0;
-}
-
-
-/* =====================================================
-   HEART SEAL
-===================================================== */
-
-.seal {
-
-    position: absolute;
-
-    z-index: 6;
-
-    left: 50%;
-
-    top: 42%;
-
-    transform:
-        translate(-50%,-50%);
-
-    width: 72px;
-
-    height: 72px;
-
-    border-radius: 50%;
-
-    display: grid;
-
-    place-items: center;
-
-    color: white;
-
-    font-size: 1.5rem;
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--pink),
-            var(--pink-dark)
-        );
-
-    box-shadow:
-        0 10px 30px
-        rgba(255,79,154,0.42);
-
-    transition:
-        transform
-        0.7s ease,
-        opacity
-        0.5s ease;
-}
-
-
-.envelope.opened .seal {
-
-    transform:
-        translate(-50%,-50%)
-        scale(0.4);
-
-    opacity: 0;
-}
-
-
-/* =====================================================
-   OPEN TEXT
-===================================================== */
-
-.hint {
-
-    position: absolute;
-
-    z-index: 7;
-
-    bottom: 30px;
-
-    left: 50%;
-
-    transform:
-        translateX(-50%);
-
-    color:
-        rgba(255,255,255,0.68);
-
-    font-size: 0.78rem;
-
-    letter-spacing: 0.13em;
-
-    text-transform: uppercase;
-
-    white-space: nowrap;
-
-    transition:
-        opacity 0.4s;
-}
-
-body.light .hint {
-
-    color:
-        rgba(36,21,29,0.62);
-}
-
-
-.envelope.opened .hint {
-
-    opacity: 0;
-}
-
-
-/* =====================================================
-   LETTER
-===================================================== */
-
-.letter {
-
-    position: absolute;
-
-    z-index: 3;
-
-    left: 5%;
-
-    top: 24px;
-
-    width: 90%;
-
-    min-height: 570px;
-
-    padding:
-        42px
-        clamp(24px,5vw,64px);
-
-    border-radius: 20px;
-
-    background:
-        var(--paper);
-
-    color:
-        var(--text);
-
-    box-shadow:
-        0 35px 90px
-        rgba(0,0,0,0.35);
-
-    border:
-        1px solid
-        rgba(217,31,112,0.13);
-
-    transform:
-        translateY(15px)
-        scale(0.97);
-
-    opacity: 0;
-
-    pointer-events: none;
-
-    transition:
-
-        opacity
-        0.8s
-        0.55s
-        ease,
-
-        transform
-        1s
-        0.55s
-        cubic-bezier(.22,1,.36,1);
-
-    overflow: hidden;
-
-    text-align: left;
-}
-
-
-.envelope.opened .letter {
-
-    transform:
-        translateY(-225px)
-        scale(1);
-
-    opacity: 1;
-
-    pointer-events: auto;
-}
-
-
-.letter::before {
-
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    opacity: 0.45;
-
-    background-image:
-        radial-gradient(
-            rgba(217,31,112,0.12)
-            0.8px,
-            transparent 0.8px
-        );
-
-    background-size:
-        18px 18px;
-}
-
-
-.letter-inner {
-
-    position: relative;
-
-    z-index: 2;
-}
-
-
-/* =====================================================
-   LETTER HEADER
-===================================================== */
-
-.letter-top {
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
-
-    gap: 20px;
-
-    margin-bottom: 22px;
-}
-
-
-.stamp {
-
-    width: 64px;
-
-    height: 64px;
-
-    border-radius: 50%;
-
-    display: grid;
-
-    place-items: center;
-
-    background: #111;
-
-    color: white;
-
-    border:
-        5px solid white;
-
-    box-shadow:
-        0 7px 18px
-        rgba(0,0,0,0.15);
-
-    font-size: 1.4rem;
-}
-
-
-.date {
-
-    color:
-        var(--pink-dark);
-
-    font-weight: 800;
-
-    font-size: 0.75rem;
-
-    letter-spacing: 0.16em;
-
-    text-transform: uppercase;
-}
-
-
-/* =====================================================
-   LETTER TITLE
-===================================================== */
-
-.letter h2 {
-
-    margin:
-        8px 0 18px;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size:
-        clamp(
-            2rem,
-            5vw,
-            3.7rem
-        );
-
-    line-height: 1;
-}
-
-
-.letter h2 span {
-
-    color:
-        var(--pink-dark);
-}
-
-
-/* =====================================================
-   LETTER CONTENT
-===================================================== */
-
-.letter p {
-
-    position: relative;
-
-    margin-bottom: 17px;
-
-    font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
-
-    font-size:
-        clamp(
-            1rem,
-            1.7vw,
-            1.14rem
-        );
-
-    line-height: 1.85;
-}
-
-
-/* =====================================================
-   TEACHER PHOTO
-===================================================== */
-
-.teacher-photo {
-
-    float: right;
-
-    width: 180px;
-
-    height: 220px;
-
-    margin:
-        4px 0 18px 28px;
-
-    object-fit: cover;
-
-    border-radius: 18px;
-
-    border:
-        7px solid white;
-
-    box-shadow:
-        0 18px 35px
-        rgba(0,0,0,0.18);
-
-    transform:
-        rotate(2deg);
-
-    transition:
-        transform 0.5s ease;
-}
-
-
-.teacher-photo:hover {
-
-    transform:
-        rotate(0deg)
-        scale(1.03);
-}
-
-
-/* =====================================================
-   HEART LINE
-===================================================== */
-
-.heart-line {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 10px;
-
-    margin: 20px 0;
-
-    color:
-        var(--pink);
-}
-
-
-.heart-line::before,
-.heart-line::after {
-
-    content: "";
-
-    height: 1px;
-
-    flex: 1;
-
-    background:
-        linear-gradient(
-            90deg,
-            transparent,
-            rgba(255,79,154,0.5)
-        );
-}
-
-
-.heart-line::after {
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(255,79,154,0.5),
-            transparent
-        );
-}
-
-
-/* =====================================================
-   SIGNATURE
-===================================================== */
-
-.closing {
-
-    margin-top: 28px !important;
-
-    font-style: italic;
-
-    color:
-        var(--muted);
-}
-
-
-.signature {
-
-    margin-top: 3px;
-
-    font-family:
-        "Brush Script MT",
-        "Segoe Script",
-        cursive;
-
-    font-size: 2.3rem;
-
-    color:
-        var(--pink-dark);
-}
-
-
-/* =====================================================
-   CLOSE BUTTON
-===================================================== */
-
-.open-again {
-
-    margin-top: 38px;
-
-    padding:
-        12px 18px;
-
-    border: none;
-
-    border-radius: 999px;
-
-    color: white;
-
-    background: #111;
-
-    cursor: pointer;
-
-    font-weight: 800;
-
-    box-shadow:
-        0 10px 24px
-        rgba(0,0,0,0.2);
-
-    transition:
-        0.3s ease;
-}
-
-
-.open-again:hover {
-
-    background:
-        var(--pink-dark);
-
-    transform:
-        translateY(-2px);
-}
-
-
-/* =====================================================
-   FLOATING HEARTS
-===================================================== */
-
-.floating-heart {
-
-    position: fixed;
-
-    z-index: 5;
-
-    pointer-events: none;
-
-    color:
-        var(--pink);
-
-    font-size: 18px;
-
-    animation:
-        floatHeart
-        4s
-        linear
-        forwards;
-
-    filter:
-        drop-shadow(
-            0 0 7px
-            rgba(255,79,154,0.55)
-        );
-}
-
-
-@keyframes floatHeart {
-
-    0% {
-
-        opacity: 0;
-
-        transform:
-            translateY(20px)
-            scale(0.5)
-            rotate(0deg);
-    }
-
-    12% {
-
-        opacity: 1;
-    }
-
-    100% {
-
-        opacity: 0;
-
-        transform:
-            translateY(-100vh)
-            scale(1.5)
-            rotate(35deg);
-    }
-}
-
-
-/* =====================================================
-   MOBILE
-===================================================== */
-
-@media (max-width:700px) {
-
-    .topbar {
-
-        top: 10px;
-    }
-
-    main {
-
-        padding-top: 105px;
-    }
-
-    .envelope-wrap {
-
-        height: 360px;
-    }
-
-    .envelope {
-
-        transform: scale(0.88);
-
-        transform-origin:
-            top center;
-    }
-
-    .envelope.opened {
-
-        transform:
-            scale(0.88)
-            translateY(35px);
-    }
-
-    .letter {
-
-        width: 96%;
-
-        left: 2%;
-
-        min-height: 640px;
-
-        padding:
-            28px 22px;
-    }
-
-    .envelope.opened .letter {
-
-        transform:
-            translateY(-185px)
-            scale(1);
-    }
-
-    .teacher-photo {
-
-        float: none;
-
-        display: block;
-
-        width: 145px;
-
-        height: 175px;
-
-        margin:
-            0 auto 24px;
-    }
-
-    .letter-top {
-
-        align-items:
-            flex-start;
-    }
-}
-
-
-/* =====================================================
-   REDUCED MOTION
-===================================================== */
-
-@media (prefers-reduced-motion: reduce) {
-
-    *,
-    *::before,
-    *::after {
-
-        animation-duration:
-            0.01ms !important;
-
-        animation-iteration-count:
-            1 !important;
-
-        transition-duration:
-            0.01ms !important;
-
-        scroll-behavior:
-            auto !important;
-    }
-}
-
-</style>
-</head>
-
-
-<body>
-
-
-<!-- ===================================================
-     BACKGROUND
-=================================================== -->
-
-<div class="ambient">
-
-    <div class="orb one"></div>
-
-    <div class="orb two"></div>
-
-</div>
-
-
-
-<!-- ===================================================
-     TOP BAR
-=================================================== -->
-
-<header class="topbar">
-
-    <div class="brand">
-
-        <span class="brand-dot"></span>
-
-        A Letter of Gratitude
-
-    </div>
-
-
-    <button class="theme-btn" id="themeBtn" type="button">
-
-        ☀️ Light Mode
-
-    </button>
-
-</header>
-
-
-
-<!-- ===================================================
-     MAIN CONTENT
-=================================================== -->
-
-<main>
-
-<section class="scene">
-
-
-    <p class="eyebrow">
-
-        Teachers' Day • With heartfelt gratitude
-
-    </p>
-
-
-    <h1>
-
-        For
-        <span>
-            Sir Randy Bello
-        </span>
-
-    </h1>
-
-
-    <p class="subtitle">
-
-        A small letter for a teacher whose lessons go
-        beyond code — inspiring creativity, patience,
-        confidence, and the courage to keep learning.
-
-    </p>
-
-
-
-    <!-- =================================================
-         ENVELOPE
-    ================================================== -->
-
-    <div class="envelope-wrap">
-
-
-        <div class="envelope opened" id="envelope" role="button" tabindex="0" aria-label="Open the Teachers' Day letter">
-
-
-            <!-- =========================================
-                 LETTER
-            ========================================== -->
-
-            <div class="letter" id="letter">
-
-
-                <div class="letter-inner">
-
-
-                    <!-- LETTER HEADER -->
-
-                    <div class="letter-top">
-
-                        <div class="date">
-
-                            Teachers' Day 2026
-
-                        </div>
-
-
-                        <div class="stamp">
-
-                            ♥️
-
-                        </div>
-
-                    </div>
-
-
-
-                    <!-- TEACHER PHOTO -->
-
-                    <img class="teacher-photo" src="Teachers_day_card/images/bello.png.jpg" alt="Sir Randy Bello">
-
-
-
-                    <!-- LETTER TITLE -->
-
-                    <h2>
-
-                        Dear
-                        <span>
-                            Sir Randy Bello,
-                        </span>
-
-                    </h2>
-
-
-
-                    <!-- MESSAGE -->
-
-                    <p>
-
-                        Thank you for every lesson, every
-                        explanation, every challenge, and
-                        every moment you encouraged us to
-                        try again when something did not
-                        work the first time.
-
-                    </p>
-
-
-                    <p>
-
-                        As our Web Development instructor,
-                        you taught us more than HTML, CSS,
-                        JavaScript, and the art of turning
-                        an idea into a working page.
-
-                        You showed us that good development
-                        takes patience, creativity,
-                        problem-solving, and the willingness
-                        to keep learning.
-
-                    </p>
-
-
-
-                    <!-- HEART DIVIDER -->
-
-                    <div class="heart-line">
-
-                        ♥️
-
-                    </div>
-
-
-
-                    <p>
-
-                        Every project, bug, design, and
-                        line of code became an opportunity
-                        to learn something new.
-
-                        Your guidance helped make difficult
-                        concepts feel possible and gave us
-                        more confidence to create,
-                        experiment, and improve.
-
-                    </p>
-
-
-                    <p>
-
-                        On this Teachers' Day, we simply
-                        want to say:
-
-                        <strong>
-                            thank you for believing in your
-                            students and for sharing your
-                            knowledge with us.
-                        </strong>
-
-                    </p>
-
-
-
-                    <!-- CLOSING -->
-
-                    <p class="closing">
-
-                        With sincere appreciation and
-                        gratitude,
-
-                    </p>
-
-
-                    <div class="signature">
-
-                        Your Student ♥️
-
-                    </div>
-
-
-
-                    <!-- CLOSE -->
-
-                    <button class="open-again" id="closeLetter" type="button">
-
-                        Close Letter
-
-                    </button>
-
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =========================================
-                 ENVELOPE BACK
-            ========================================== -->
-
-            <div class="env-back"></div>
-
-
-
-            <!-- =========================================
-                 ENVELOPE FLAP
-            ========================================== -->
-
-            <div class="flap"></div>
-
-
-
-            <!-- =========================================
-                 HEART SEAL
-            ========================================== -->
-
-            <div class="seal">
-
-                ♥️
-
-            </div>
-
-
-
-            <!-- =========================================
-                 HINT
-            ========================================== -->
-
-            <div class="hint">
-
-                Click the envelope to open
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-</main>
-
-
-
-<script>
-
-/* =====================================================
-   ELEMENTS
-===================================================== */
-
-const envelope =
-    document.getElementById("envelope");
-
-const closeLetter =
-    document.getElementById("closeLetter");
-
-const themeBtn =
-    document.getElementById("themeBtn");
-
-
-/* =====================================================
-   CREATE FLOATING HEART
-===================================================== */
-
+```javascript
 function createHeart() {
+    const heart = document.createElement("div");
 
-    const heart =
-        document.createElement("div");
-
-    heart.className =
-        "floating-heart";
-
+    heart.className = "floating-heart";
 
     heart.textContent =
         Math.random() > 0.5
             ? "♥"
             : "♡";
-
-
-    heart.style.left =
-        Math.random() * 100 + "vw";
-
-
-    heart.style.bottom =
-        "-30px";
-
-
-    heart.style.fontSize =
-        (14 + Math.random() * 22) + "px";
-
-
-    heart.style.animationDuration =
-        (3.5 + Math.random() * 3) + "s";
-
-
-    document.body.appendChild(heart);
-
-
-    setTimeout(() => {
-
-        heart.remove();
-
-    }, 7000);
-
 }
+```
 
+Additional hearts are automatically created every few seconds.
 
-/* =====================================================
-   OPEN LETTER
-===================================================== */
+You can change the animation timing here:
 
-function openLetter() {
-
-    envelope.classList.add("opened");
-
-
-    /*
-       Create several hearts when
-       the letter opens.
-    */
-
-    for (
-        let i = 0;
-        i < 12;
-        i++
-    ) {
-
-        setTimeout(
-            createHeart,
-            i * 100
-        );
-
-    }
-
-}
-
-
-/* =====================================================
-   CLOSE LETTER
-===================================================== */
-
-function closeLetterAction() {
-
-    envelope.classList.remove("opened");
-
-}
-
-
-/* =====================================================
-   ENVELOPE CLICK
-===================================================== */
-
-envelope.addEventListener(
-    "click",
-    function(event) {
-
-        /*
-           Prevent the close button from
-           reopening the envelope.
-        */
-
-        if (
-            event.target.closest("#closeLetter")
-        ) {
-
-            return;
-
-        }
-
-
-        if (
-            !envelope.classList.contains("opened")
-        ) {
-
-            openLetter();
-
-        }
-
-    }
-);
-
-
-/* =====================================================
-   KEYBOARD ACCESS
-===================================================== */
-
-envelope.addEventListener(
-    "keydown",
-    function(event) {
-
-        if (
-            (
-                event.key === "Enter" ||
-                event.key === " "
-            )
-            &&
-            !envelope.classList.contains("opened")
-        ) {
-
-            event.preventDefault();
-
-            openLetter();
-
-        }
-
-    }
-);
-
-
-/* =====================================================
-   CLOSE BUTTON
-===================================================== */
-
-closeLetter.addEventListener(
-    "click",
-    function(event) {
-
-        event.stopPropagation();
-
-        closeLetterAction();
-
-    }
-);
-
-
-/* =====================================================
-   DARK / LIGHT MODE
-===================================================== */
-
-themeBtn.addEventListener(
-    "click",
-    function() {
-
-        document.body.classList.toggle("light");
-
-
-        const light =
-            document.body.classList.contains("light");
-
-
-        if (light) {
-
-            themeBtn.textContent =
-                "🌙 Dark Mode";
-
-            localStorage.setItem(
-                "teacherTheme",
-                "light"
-            );
-
-        }
-
-        else {
-
-            themeBtn.textContent =
-                "☀️ Light Mode";
-
-            localStorage.setItem(
-                "teacherTheme",
-                "dark"
-            );
-
-        }
-
-    }
-);
-
-
-/* =====================================================
-   REMEMBER THEME
-===================================================== */
-
-if (
-    localStorage.getItem("teacherTheme")
-    === "light"
-) {
-
-    document.body.classList.add("light");
-
-    themeBtn.textContent =
-        "🌙 Dark Mode";
-
-}
-
-
-/* =====================================================
-   AUTOMATIC FLOATING HEARTS
-===================================================== */
-
+```javascript
 setInterval(
     function() {
-
-        if (
-            Math.random() > 0.35
-        ) {
-
+        if (Math.random() > 0.35) {
             createHeart();
-
         }
-
     },
     1800
 );
+```
 
-</script>
+---
 
+## 📱 Responsive Design
 
+The website automatically adjusts for smaller screens using CSS media queries.
 
-<div class="floating-heart" style="left: 27.4702vw; bottom: -30px; font-size: 33.368px; animation-duration: 6.1296s;">♥</div></body></html>
+Mobile devices receive:
+
+* Smaller envelope size
+* Smaller teacher image
+* Adjusted letter spacing
+* Responsive typography
+* Mobile-friendly layout
+
+You can test the design using your browser's developer tools.
+
+In Chrome or Edge:
+
+```text
+Right Click → Inspect → Toggle Device Toolbar
+```
+
+---
+
+## ♿ Reduced Motion
+
+The project includes support for users who prefer reduced animation.
+
+The CSS detects:
+
+```css
+@media (prefers-reduced-motion: reduce)
+```
+
+and reduces animation and transition durations.
+
+---
+
+## 🌐 Deploy to GitHub Pages
+
+You can publish this project online for free using **GitHub Pages**.
+
+### Step 1 — Create a Repository
+
+Create a new GitHub repository, for example:
+
+```text
+teachers-day-letter
+```
+
+### Step 2 — Upload Your Files
+
+Upload:
+
+```text
+index.html
+README.md
+images/
+```
+
+Make sure the image remains inside the correct folder.
+
+### Step 3 — Enable GitHub Pages
+
+Go to:
+
+```text
+Repository → Settings → Pages
+```
+
+Under **Build and deployment**, select:
+
+```text
+Source: Deploy from a branch
+```
+
+Choose:
+
+```text
+Branch: main
+Folder: / (root)
+```
+
+Then click:
+
+```text
+Save
+```
+
+GitHub will generate a public website link for your project.
+
+---
+
+## 🧪 Running Locally
+
+No installation is required.
+
+You do **not** need:
+
+* Node.js
+* npm
+* PHP
+* MySQL
+* Python
+* A web server
+
+Just open:
+
+```text
+index.html
+```
+
+in a modern web browser.
+
+---
+
+## 📸 Preview
+
+The website presents an elegant Teachers' Day experience:
+
+```text
+┌─────────────────────────────────────────┐
+│       A LETTER OF GRATITUDE             │
+│                          ☀️ Light Mode  │
+│                                         │
+│          Teachers' Day                  │
+│                                         │
+│       For Sir Randy Bello               │
+│                                         │
+│     ┌─────────────────────────┐         │
+│     │                         │         │
+│     │        💗              │         │
+│     │     ENVELOPE            │         │
+│     │                         │         │
+│     │  Click to open          │         │
+│     └─────────────────────────┘         │
+│                                         │
+└─────────────────────────────────────────┘
+```
+
+After opening:
+
+```text
+┌───────────────────────────────────────┐
+│          Teachers' Day 2026       ♥️  │
+│                                       │
+│  [ Teacher Photo ]   Dear Sir Randy,  │
+│                                       │
+│  Thank you for every lesson...        │
+│                                       │
+│  Your guidance helped us...           │
+│                                       │
+│       ♥️ ───────────────── ♥️         │
+│                                       │
+│  With sincere appreciation...         │
+│                                       │
+│          Your Student ♥️              │
+│                                       │
+│          [ Close Letter ]             │
+└───────────────────────────────────────┘
+```
+
+---
+
+## 📄 License
+
+This project is created for educational and personal use.
+
+You are free to modify the design, message, colors, images, and animations for your own Teachers' Day project.
+
+---
+
+## 👨‍💻 Author
+
+Created as a creative Web Development project using:
+
+**HTML • CSS • JavaScript**
+
+Made with ❤️ for **Sir Randy Bello**.
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving the repository a ⭐ on GitHub!
+
+Thank you for visiting! 💌
