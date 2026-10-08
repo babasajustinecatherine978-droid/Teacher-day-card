@@ -1429,7 +1429,7 @@ body.light .hint {
 
                     <!-- TEACHER PHOTO -->
 
-                    <img class="teacher-photo" src="file:///C:/Users/Student%20User/Downloads/Teachers_day_card/photo.jpg" alt="Sir Randy Bello">
+                    <img class="teacher-photo" src="images/bello.png" alt="Sir Randy Bello">
 
 
 
